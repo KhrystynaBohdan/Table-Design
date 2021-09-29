@@ -38,261 +38,281 @@
     </div>
 </div>
 <!--TABLE-->
-<div>
-<table class="table">
-    <thead class="table__head">
-    <tr>
-        <th>
-            <label>
-            <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </th>
-        <th>
-            <div class="table__th">
-                <span>Company</span>
-                <input class="table__search" placeholder="Search"></div>
-        </th>
-        <th>
-            <div class="table__th">
-                <span class="table__headerSort">Status</span>
-                <div class="table__selectwrap">
-                <select class="table__select">
-                    <option>All</option>
-                </select>
+<div class="table-container">
+    <table class="table">
+        <thead class="table__head">
+        <tr>
+            <th class="table__checkbox-header">
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </th>
+            <th>
+                <div class="table__th">
+                    <span>Company</span>
+                    <input class="table__search" placeholder="Search"></div>
+            </th>
+            <th>
+                <div class="table__th">
+                    <span class="table__headerSort">Status</span>
+                    <div class="table__selectwrap">
+                        <select class="table__select">
+                            <option>All</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </th>
-        <th>
-            <div class="table__th">
-                <span class="table__headerSort">Type</span>
-                <div class="table__selectwrap">
-                <select class="table__select">
-                    <option>All</option>
-                </select>
+            </th>
+            <th>
+                <div class="table__th">
+                    <span class="table__headerSort">Type</span>
+                    <div class="table__selectwrap">
+                        <select class="table__select">
+                            <option>All</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-        </th>
-        <th>
-            <div class="table__th">
-                <span>SKU</span>
-                <input class="table__search" placeholder="Search"></div>
-        </th>
-        <th>
-            <div class="table__th">
-                <span>Contact</span>
-                <input class="table__search" placeholder="Search"></div>
-        </th>
-        <th>
-            <div class="table__th">
-                <span class="table__headerSort">Price USD</span>
-                <div class="table__selectwrap">
-                <select class="table__select">
-                    <option>All</option>
-                </select>
+            </th>
+            <th>
+                <div class="table__th">
+                    <span>SKU</span>
+                    <input class="table__search" placeholder="Search"></div>
+            </th>
+            <th>
+                <div class="table__th">
+                    <span>Contact</span>
+                    <input class="table__search" placeholder="Search"></div>
+            </th>
+            <th>
+                <div class="table__th">
+                    <span class="table__headerSort">Price USD</span>
+                    <div class="table__selectwrap">
+                        <select class="table__select">
+                            <option>All</option>
+                        </select>
+                    </div>
                 </div>
+            </th>
+            <th class="table__action">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table__separator"></tr>
+        <tr>
+            <td>
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </td>
+            <td>
+                <div class="table__image"><img src="images/louis-vuitton.png" alt="louis-vuitton">Louis Vuitton</div>
+            </td>
+            <td>
+                <div class="table__status table__status--active">Active</div>
+            </td>
+            <td>Bravo</td>
+            <td><span class="table__sku">9177</span></td>
+            <td>
+                <div class="table__image"><img class="table__image-round" src="images/image1.png" alt="contact">Evan
+                    Flores
+                </div>
+            </td>
+            <td>
+                <div class="table__price">$452.85</div>
+            </td>
+            <td>
+                <div class="table__actions">
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </td>
+            <td>
+                <div class="table__image"><img src="images/johnson.png" alt="johnson">Johnson & Johnson</div>
+            </td>
+            <td>
+                <div class="table__status table__status--danger">Danger</div>
+            </td>
+            <td>Alfa</td>
+            <td><span class="table__sku">3064</span></td>
+            <td>
+                <div class="table__image"><img class="table__image-round" src="images/image2.png" alt="contact">Arlene
+                    Wilson
+                </div>
+            </td>
+            <td>
+                <div class="table__price">$901.31</div>
+            </td>
+            <td>
+                <div class="table__actions">
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </td>
+            <td>
+                <div class="table__image"><img src="images/starbucks.png" alt="starbucks">Starbucks</div>
+            </td>
+            <td>
+                <div class="table__status table__status--pending">Pending</div>
+            </td>
+            <td>Bravo</td>
+            <td><span class="table__sku">9195</span></td>
+            <td>
+                <div class="table__image"><img class="table__image-round" src="images/image3.png" alt="contact">Jennie
+                    Cooper
+                </div>
+            </td>
+            <td>
+                <div class="table__price">$641.20</div>
+            </td>
+            <td>
+                <div class="table__actions">
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </td>
+            <td>
+                <div class="table__image"><img src="images/disney.png" alt="disney">The Walt Disney</div>
+            </td>
+            <td>
+                <div class="table__status table__status--danger">Danger</div>
+            </td>
+            <td>Alfa</td>
+            <td><span class="table__sku">3128</span></td>
+            <td>
+                <div class="table__image"><img class="table__image-round" src="images/image4.png" alt="contact">Philip
+                    Steward
+                </div>
+            </td>
+            <td>
+                <div class="table__price">$510.30</div>
+            </td>
+            <td>
+                <div class="table__actions">
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </td>
+            <td>
+                <div class="table__image"><img src="images/mitsubishi.png" alt="mitsubishi">Mitsubishi</div>
+            </td>
+            <td>
+                <div class="table__status table__status--pending">Pending</div>
+            </td>
+            <td>Bravo</td>
+            <td><span class="table__sku">9892</span></td>
+            <td>
+                <div class="table__image"><img class="table__image-round" src="images/image5.png" alt="contact">Jorge
+                    Black
+                </div>
+            </td>
+            <td>
+                <div class="table__price">$828.90</div>
+            </td>
+            <td>
+                <div class="table__actions">
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label class="table__checkbox-label">
+                    <input class="table__checkbox" type="checkbox">
+                    <span class="table__checkstyle"></span>
+                </label>
+            </td>
+            <td>
+                <div class="table__image"><img src="images/ibm.png" alt="ibm">IBM</div>
+            </td>
+            <td>
+                <div class="table__status table__status--danger">Danger</div>
+            </td>
+            <td>Gold</td>
+            <td><span class="table__sku">9011</span></td>
+            <td>
+                <div class="table__image"><img class="table__image-round" src="images/image6.png" alt="contact">Gladys
+                    Jones
+                </div>
+            </td>
+            <td>
+                <div class="table__price">$845.59</div>
+            </td>
+            <td>
+                <div class="table__actions">
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                    <div class="table__circle"></div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="footer__pages">
+            <button class="footer__button">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M9.13054 0.269658C9.42343 0.562551 9.42343 1.03742 9.13054 1.33032L2.46087 7.99999L9.13054 14.6697C9.42343 14.9625 9.42343 15.4374 9.13054 15.7303C8.83765 16.0232 8.36277 16.0232 8.06988 15.7303L0.869878 8.53032C0.729225 8.38967 0.650208 8.1989 0.650208 7.99999C0.650208 7.80107 0.729225 7.61031 0.869878 7.46966L8.06988 0.269658C8.36277 -0.0232355 8.83765 -0.0232355 9.13054 0.269658Z"
+                          fill="#B0BAC9"/>
+                </svg>
+            </button>
+            <button class="footer__link"><a href="#">1</a></button>
+            / 16
+            <button class="footer__button">
+                <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.869817 0.269658C0.576923 0.562551 0.576923 1.03742 0.869817 1.33032L7.53949 7.99999L0.869817 14.6697C0.576923 14.9625 0.576923 15.4374 0.869817 15.7303C1.16271 16.0232 1.63758 16.0232 1.93048 15.7303L9.13048 8.53032C9.27113 8.38967 9.35015 8.1989 9.35015 7.99999C9.35015 7.80107 9.27113 7.61031 9.13048 7.46966L1.93048 0.269658C1.63758 -0.0232355 1.16271 -0.0232355 0.869817 0.269658Z"
+                          fill="#B0BAC9"/>
+                </svg>
+            </button>
+        </div>
+        <div class="footer__rows">
+            Rows per page
+            <div class="footer__selectwrap">
+                <select>
+                    <option>15</option>
+                </select>
             </div>
-        </th>
-        <th class="table__action">Action</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>
-            <label>
-                <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </td>
-        <td>
-            <div class="table__image"><img src="images/louis-vuitton.png" alt="louis-vuitton">Louis Vuitton</div>
-        </td>
-        <td><span class="table__status table__status--active">Active</span></td>
-        <td>Bravo</td>
-        <td><span class="table__sku">9177</span></td>
-        <td>
-            <div class="table__image"><img class="table__image-round" src="images/image1.png" alt="contact">Evan Flores
-            </div>
-        </td>
-        <td>
-            <div class="table__price">$452.85</div>
-        </td>
-        <td>
-            <div class="table__actions">
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label>
-                <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </td>
-        <td>
-            <div class="table__image"><img src="images/johnson.png" alt="johnson">Johnson & Johnson</div>
-        </td>
-        <td><span class="table__status table__status--danger">Danger</span></td>
-        <td>Alfa</td>
-        <td><span class="table__sku">3064</span></td>
-        <td>
-            <div class="table__image"><img class="table__image-round" src="images/image2.png" alt="contact">Arlene
-                Wilson
-            </div>
-        </td>
-        <td>
-            <div class="table__price">$901.31</div>
-        </td>
-        <td>
-            <div class="table__actions">
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label>
-                <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </td>
-        <td>
-            <div class="table__image"><img src="images/starbucks.png" alt="starbucks">Starbucks</div>
-        </td>
-        <td><span class="table__status table__status--pending">Pending</span></td>
-        <td>Bravo</td>
-        <td><span class="table__sku">9195</span></td>
-        <td>
-            <div class="table__image"><img class="table__image-round" src="images/image3.png" alt="contact">Jennie
-                Cooper
-            </div>
-        </td>
-        <td>
-            <div class="table__price">$641.20</div>
-        </td>
-        <td>
-            <div class="table__actions">
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label>
-                <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </td>
-        <td>
-            <div class="table__image"><img src="images/disney.png" alt="disney">The Walt Disney</div>
-        </td>
-        <td><span class="table__status table__status--danger">Danger</span></td>
-        <td>Alfa</td>
-        <td><span class="table__sku">3128</span></td>
-        <td>
-            <div class="table__image"><img class="table__image-round" src="images/image4.png" alt="contact">Philip
-                Steward
-            </div>
-        </td>
-        <td>
-            <div class="table__price">$510.30</div>
-        </td>
-        <td>
-            <div class="table__actions">
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label>
-                <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </td>
-        <td>
-            <div class="table__image"><img src="images/mitsubishi.png" alt="mitsubishi">Mitsubishi</div>
-        </td>
-        <td><span class="table__status table__status--pending">Pending</span></td>
-        <td>Bravo</td>
-        <td><span class="table__sku">9892</span></td>
-        <td>
-            <div class="table__image"><img class="table__image-round" src="images/image5.png" alt="contact">Jorge Black
-            </div>
-        </td>
-        <td>
-            <div class="table__price">$828.90</div>
-        </td>
-        <td>
-            <div class="table__actions">
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label>
-                <input class="table__checkbox" type="checkbox">
-                <span class="table__checkstyle"></span>
-            </label>
-        </td>
-        <td>
-            <div class="table__image"><img src="images/ibm.png" alt="ibm">IBM</div>
-        </td>
-        <td><span class="table__status table__status--danger">Danger</span></td>
-        <td>Gold</td>
-        <td><span class="table__sku">9011</span></td>
-        <td>
-            <div class="table__image"><img class="table__image-round" src="images/image6.png" alt="contact">Gladys Jones
-            </div>
-        </td>
-        <td>
-            <div class="table__price">$845.59</div>
-        </td>
-        <td>
-            <div class="table__actions">
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-                <div class="table__circle"></div>
-            </div>
-        </td>
-    </tr>
-    </tbody>
-</table>
-</div>
-<!--FOOTER-->
-<div class="footer">
-    <div class="footer__pages">
-        <button class="footer__button">
-            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13054 0.269658C9.42343 0.562551 9.42343 1.03742 9.13054 1.33032L2.46087 7.99999L9.13054 14.6697C9.42343 14.9625 9.42343 15.4374 9.13054 15.7303C8.83765 16.0232 8.36277 16.0232 8.06988 15.7303L0.869878 8.53032C0.729225 8.38967 0.650208 8.1989 0.650208 7.99999C0.650208 7.80107 0.729225 7.61031 0.869878 7.46966L8.06988 0.269658C8.36277 -0.0232355 8.83765 -0.0232355 9.13054 0.269658Z" fill="#B0BAC9"/>
-            </svg>
-        </button>
-        <a href="#" class="footer__link">1</a>
-        / 16
-        <button class="footer__button">
-            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.869817 0.269658C0.576923 0.562551 0.576923 1.03742 0.869817 1.33032L7.53949 7.99999L0.869817 14.6697C0.576923 14.9625 0.576923 15.4374 0.869817 15.7303C1.16271 16.0232 1.63758 16.0232 1.93048 15.7303L9.13048 8.53032C9.27113 8.38967 9.35015 8.1989 9.35015 7.99999C9.35015 7.80107 9.27113 7.61031 9.13048 7.46966L1.93048 0.269658C1.63758 -0.0232355 1.16271 -0.0232355 0.869817 0.269658Z" fill="#B0BAC9"/>
-            </svg>
-        </button>
-    </div>
-    <div class="footer__rows">
-        Rows per page
-        <div class="footer__selectwrap">
-        <select>
-            <option>15</option>
-        </select>
         </div>
     </div>
 </div>

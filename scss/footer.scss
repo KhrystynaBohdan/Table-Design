@@ -2,7 +2,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  &__button{
+
+  &__pages {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__button {
     border: 2px solid #B0BAC9;
     width: 30px;
     height: 30px;
@@ -10,24 +17,39 @@
     //clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     border-radius: 5px;
     padding: 8px 12px;
-    &:hover{
+    position: relative;
+
+    &:hover {
       cursor: pointer;
       color: $dark-blue;
     }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
-  &__link{
+
+  &__link {
     border: 2px solid #B0BAC9;
     width: 30px;
     height: 30px;
     background-color: $white;
-    padding: 8px 12px;
-    text-decoration: none;
-    color: #0000FFFF;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
+
+    a {
+      text-decoration: none;
+      color: #0000FFFF;
+
+    }
   }
-  &__select{
+
+  &__select {
     border: none;
     font-size: 14px;
     line-height: 20px;
@@ -35,26 +57,24 @@
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    &:hover{
+
+    &:hover {
       cursor: pointer;
     }
   }
-  &__selectwrap{
-    position: relative;
-  }
-  &__selectwrap::before{
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: block;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 6px 0 6px;
-    border-color: grey transparent transparent transparent;
-    pointer-events: none;
 
+  &__selectwrap {
+    position: relative;
+
+    select {
+      padding: 10px;
+      border-color: #B0BAC9;
+    }
+  }
+
+  &__rows {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }
