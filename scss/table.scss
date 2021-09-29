@@ -1,0 +1,191 @@
+.table {
+  margin: auto;
+  &__checkbox {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #DADADA;
+    -webkit-appearance: checkbox;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  &__checkstyle{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #B0BAC9;
+  }
+  &__checkbox:checked + &__checkstyle::before{
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #B0BAC9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__head {
+    box-shadow: inset 0px -1px 0px #C9CFDA;
+  }
+
+  &__th {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+  &__status {
+    border: 1px solid;
+    padding: 0 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 18px;
+
+    &--active {
+      border-color: $green;
+      color: $green;
+    }
+
+    &--danger {
+      border-color: $red;
+      color: $red;
+    }
+
+    &--pending {
+      border-color: $yellow;
+      color: $yellow;
+    }
+  }
+
+  th, td {
+    text-align: left;
+    padding: 12px;
+
+  }
+ th span {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 24px;
+ }
+  &__action{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__headerSort{
+    padding-right: 20px;
+    position: relative;
+    &:hover{
+      cursor: pointer;
+    }
+    &:before,
+    &:after {
+      border: 4px solid transparent;
+      content: "";
+      display: block;
+      height: 0;
+      right: 5px;
+      top: 50%;
+      position: absolute;
+      width: 0;
+    }
+    &:before {
+      border-bottom-color: #666;
+      margin-top: -9px;
+      transform: translateY(-2px)
+    }
+    &:after {
+      border-top-color: #666;
+      margin-top: 1px;
+      transform: translateY(2px)
+    }
+
+  }
+
+  td{
+    vertical-align: middle;
+  }
+
+  tr {
+    box-shadow: inset 0px -1px 0px #DFE2E9;
+  }
+  &__image{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+  }
+  &__image-round{
+    border-radius: 50%;
+  }
+
+  &__sku{
+    border-radius: 8px;
+    border: 1px solid #DFE2E9;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #454D59;
+    padding: 2px 12px;
+  }
+  &__price{
+    text-align: right;
+  }
+  &__search {
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: #C9CFDA;
+    margin: 8px 0;
+  }
+  &__select{
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  &__selectwrap{
+    position: relative;
+  }
+  &__selectwrap::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 6px 0 6px;
+    border-color: grey transparent transparent transparent;
+    pointer-events: none;
+
+  }
+  &__actions{
+    display: flex;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  &__circle {
+    width: 5px;
+    height: 5px;
+    margin: 3px;
+    border-radius: 50%;
+    display: block;
+    background-color: #B0BAC9;
+    &:hover{
+      background-color: $red;
+      cursor: pointer;
+    }
+  }
+}

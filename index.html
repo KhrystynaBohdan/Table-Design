@@ -2,9 +2,299 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+<!--HEADER-->
+<div class="header">
+    <div class="header__left">
+        <div>
+            <span class="header__text header__text--bold">Table UI</span><span
+                class="header__text">/ Design system</span>
+        </div>
+        <span class="header__label">version 3.0</span>
+    </div>
+    <div class="header__right">
+        <div class="header__made">Made By</div>
+        <a class="header__icon" href="#">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="16" height="16" fill="url(#pattern0)"/>
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="scale(0.03125)"/>
+                    </pattern>
+                    <image id="image0" width="32" height="32"
+                           xlink:href="data:image/png;base64,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"/>
+                </defs>
+            </svg>
+            dribbble.com/Sergey_Arkhipov</a>
+    </div>
+</div>
+<!--TABLE-->
+<div>
+<table class="table">
+    <thead class="table__head">
+    <tr>
+        <th>
+            <label>
+            <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </th>
+        <th>
+            <div class="table__th">
+                <span>Company</span>
+                <input class="table__search" placeholder="Search"></div>
+        </th>
+        <th>
+            <div class="table__th">
+                <span class="table__headerSort">Status</span>
+                <div class="table__selectwrap">
+                <select class="table__select">
+                    <option>All</option>
+                </select>
+                </div>
+            </div>
+        </th>
+        <th>
+            <div class="table__th">
+                <span class="table__headerSort">Type</span>
+                <div class="table__selectwrap">
+                <select class="table__select">
+                    <option>All</option>
+                </select>
+                </div>
+            </div>
+        </th>
+        <th>
+            <div class="table__th">
+                <span>SKU</span>
+                <input class="table__search" placeholder="Search"></div>
+        </th>
+        <th>
+            <div class="table__th">
+                <span>Contact</span>
+                <input class="table__search" placeholder="Search"></div>
+        </th>
+        <th>
+            <div class="table__th">
+                <span class="table__headerSort">Price USD</span>
+                <div class="table__selectwrap">
+                <select class="table__select">
+                    <option>All</option>
+                </select>
+                </div>
+            </div>
+        </th>
+        <th class="table__action">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <label>
+                <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </td>
+        <td>
+            <div class="table__image"><img src="images/louis-vuitton.png" alt="louis-vuitton">Louis Vuitton</div>
+        </td>
+        <td><span class="table__status table__status--active">Active</span></td>
+        <td>Bravo</td>
+        <td><span class="table__sku">9177</span></td>
+        <td>
+            <div class="table__image"><img class="table__image-round" src="images/image1.png" alt="contact">Evan Flores
+            </div>
+        </td>
+        <td>
+            <div class="table__price">$452.85</div>
+        </td>
+        <td>
+            <div class="table__actions">
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </td>
+        <td>
+            <div class="table__image"><img src="images/johnson.png" alt="johnson">Johnson & Johnson</div>
+        </td>
+        <td><span class="table__status table__status--danger">Danger</span></td>
+        <td>Alfa</td>
+        <td><span class="table__sku">3064</span></td>
+        <td>
+            <div class="table__image"><img class="table__image-round" src="images/image2.png" alt="contact">Arlene
+                Wilson
+            </div>
+        </td>
+        <td>
+            <div class="table__price">$901.31</div>
+        </td>
+        <td>
+            <div class="table__actions">
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </td>
+        <td>
+            <div class="table__image"><img src="images/starbucks.png" alt="starbucks">Starbucks</div>
+        </td>
+        <td><span class="table__status table__status--pending">Pending</span></td>
+        <td>Bravo</td>
+        <td><span class="table__sku">9195</span></td>
+        <td>
+            <div class="table__image"><img class="table__image-round" src="images/image3.png" alt="contact">Jennie
+                Cooper
+            </div>
+        </td>
+        <td>
+            <div class="table__price">$641.20</div>
+        </td>
+        <td>
+            <div class="table__actions">
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </td>
+        <td>
+            <div class="table__image"><img src="images/disney.png" alt="disney">The Walt Disney</div>
+        </td>
+        <td><span class="table__status table__status--danger">Danger</span></td>
+        <td>Alfa</td>
+        <td><span class="table__sku">3128</span></td>
+        <td>
+            <div class="table__image"><img class="table__image-round" src="images/image4.png" alt="contact">Philip
+                Steward
+            </div>
+        </td>
+        <td>
+            <div class="table__price">$510.30</div>
+        </td>
+        <td>
+            <div class="table__actions">
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </td>
+        <td>
+            <div class="table__image"><img src="images/mitsubishi.png" alt="mitsubishi">Mitsubishi</div>
+        </td>
+        <td><span class="table__status table__status--pending">Pending</span></td>
+        <td>Bravo</td>
+        <td><span class="table__sku">9892</span></td>
+        <td>
+            <div class="table__image"><img class="table__image-round" src="images/image5.png" alt="contact">Jorge Black
+            </div>
+        </td>
+        <td>
+            <div class="table__price">$828.90</div>
+        </td>
+        <td>
+            <div class="table__actions">
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>
+                <input class="table__checkbox" type="checkbox">
+                <span class="table__checkstyle"></span>
+            </label>
+        </td>
+        <td>
+            <div class="table__image"><img src="images/ibm.png" alt="ibm">IBM</div>
+        </td>
+        <td><span class="table__status table__status--danger">Danger</span></td>
+        <td>Gold</td>
+        <td><span class="table__sku">9011</span></td>
+        <td>
+            <div class="table__image"><img class="table__image-round" src="images/image6.png" alt="contact">Gladys Jones
+            </div>
+        </td>
+        <td>
+            <div class="table__price">$845.59</div>
+        </td>
+        <td>
+            <div class="table__actions">
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+                <div class="table__circle"></div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<!--FOOTER-->
+<div class="footer">
+    <div class="footer__pages">
+        <button class="footer__button">
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13054 0.269658C9.42343 0.562551 9.42343 1.03742 9.13054 1.33032L2.46087 7.99999L9.13054 14.6697C9.42343 14.9625 9.42343 15.4374 9.13054 15.7303C8.83765 16.0232 8.36277 16.0232 8.06988 15.7303L0.869878 8.53032C0.729225 8.38967 0.650208 8.1989 0.650208 7.99999C0.650208 7.80107 0.729225 7.61031 0.869878 7.46966L8.06988 0.269658C8.36277 -0.0232355 8.83765 -0.0232355 9.13054 0.269658Z" fill="#B0BAC9"/>
+            </svg>
+        </button>
+        <a href="#" class="footer__link">1</a>
+        / 16
+        <button class="footer__button">
+            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.869817 0.269658C0.576923 0.562551 0.576923 1.03742 0.869817 1.33032L7.53949 7.99999L0.869817 14.6697C0.576923 14.9625 0.576923 15.4374 0.869817 15.7303C1.16271 16.0232 1.63758 16.0232 1.93048 15.7303L9.13048 8.53032C9.27113 8.38967 9.35015 8.1989 9.35015 7.99999C9.35015 7.80107 9.27113 7.61031 9.13048 7.46966L1.93048 0.269658C1.63758 -0.0232355 1.16271 -0.0232355 0.869817 0.269658Z" fill="#B0BAC9"/>
+            </svg>
+        </button>
+    </div>
+    <div class="footer__rows">
+        Rows per page
+        <div class="footer__selectwrap">
+        <select>
+            <option>15</option>
+        </select>
+        </div>
+    </div>
+</div>
 </body>
 </html>
