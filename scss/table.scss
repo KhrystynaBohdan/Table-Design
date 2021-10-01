@@ -5,6 +5,11 @@
   font-size: 14px;
 }
 
+.table-wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
 .table {
   &__checkbox-header {
     vertical-align: middle;
@@ -14,6 +19,7 @@
     display: block;
     width: $checkboxSize;
     height: $checkboxSize;
+    position: relative;
   }
 
   &__checkbox {
