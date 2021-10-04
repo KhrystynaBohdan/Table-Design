@@ -12,43 +12,19 @@
 
 .table {
   width: 100%;
+
   &__checkbox-header {
     vertical-align: middle;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__checkbox-label {
-    display: block;
-    width: $checkboxSize;
-    height: $checkboxSize;
-    position: relative;
-  }
-
-  &__checkbox {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #DADADA;
-    -webkit-appearance: checkbox;
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-  }
-
-  &__checkstyle {
-    position: absolute;
-    width: $checkboxSize;
-    height: $checkboxSize;
-    border: 3px solid #DADADA;
-  }
-
-  &__checkbox:checked + &__checkstyle::before {
-    content: '';
-    width: 8px;
-    height: 8px;
-    background: #B0BAC9;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__head {
@@ -70,12 +46,13 @@
     border-radius: 4px;
     font-size: 12px;
     line-height: 18px;
-    width: 100%;
     text-align: center;
+    display: inline;
 
     &--active {
       border-color: $green;
       color: $green;
+      margin-left: 5px;
     }
 
     &--danger {
@@ -107,35 +84,14 @@
   }
 
   &__header-sort {
-    padding-right: 20px;
-    position: relative;
+    display: flex;
+
+    svg {
+      margin-left: 8px;
+    }
 
     &:hover {
       cursor: pointer;
-    }
-
-    &:before,
-    &:after {
-      border: 4px solid transparent;
-      content: "";
-      display: block;
-      height: 0;
-      right: 5px;
-      top: 50%;
-      position: absolute;
-      width: 0;
-    }
-
-    &:before {
-      border-bottom-color: #B0BAC9;
-      margin-top: -9px;
-      transform: translateY(-2px);
-    }
-
-    &:after {
-      border-top-color: #B0BAC9;
-      margin-top: 1px;
-      transform: translateY(2px);
     }
   }
 
@@ -188,48 +144,23 @@
     appearance: none;
     outline: 0;
     width: 95px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 40px;
+    }
 
     &:hover {
       cursor: pointer;
     }
   }
-
-  &__selectwrap {
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 22px;
-      transform: translateY(-50%);
-      border-style: solid;
-      border-width: 6px 6px 0 6px;
-      border-color: #DFE2E9 transparent transparent transparent;
-      pointer-events: none;
-
-    }
-  }
-
 
   &__actions {
-    display: flex;
+    text-align: center;
 
     &:hover {
       cursor: pointer;
-
-      .table__circle {
-        background-color: $red;
-      }
     }
-  }
-
-  &__circle {
-    width: 5px;
-    height: 5px;
-    margin: 3px;
-    border-radius: 50%;
-    display: block;
-    background-color: #B0BAC9;
   }
 }

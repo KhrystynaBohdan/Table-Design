@@ -50,33 +50,21 @@
   }
 
   &__select {
-    appearance: none;
-    outline: 0;
     line-height: 20px;
     margin: 0 8px;
     padding: 6px 12px;
-    border-color: #B0BAC9;
+    border: 1px solid #B0BAC9;
     width: 60px;
     height: 32px;
+    display: flex;
+    align-items: center;
+
+    svg {
+      margin-left: 4px;
+    }
 
     &:hover {
       cursor: pointer;
-    }
-  }
-
-  &__selectwrap {
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 14px;
-      right: 16px;
-      cursor: pointer;
-      border-style: solid;
-      border-width: 5px 6px 0 6px;
-      border-color: #B0BAC9 transparent transparent transparent;
-      pointer-events: none;
     }
   }
 
@@ -84,5 +72,10 @@
     display: flex;
     align-items: center;
     gap: 12px;
+  }
+  &__slash{
+    font-size: 14px;
+    line-height: 20px;
+    color:#B0BAC9;
   }
 }
