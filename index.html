@@ -18,11 +18,10 @@
             <thead class="table__head">
             <tr>
                 <th class="table__checkbox-header">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                              d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                              fill="#B0BAC9"/>
-                    </svg>
+                    <label class="table__checkbox-label">
+                        <input class="table__checkbox" type="checkbox">
+                        <span class="table__checkstyle"></span>
+                    </label>
                 </th>
                 <th>
                     <div class="table__th">
@@ -39,13 +38,12 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15L12 19L16 15H8Z" fill="#B0BAC9"/>
                             </svg>
                         </div>
-                        <div class="table__select">
-                            <div>All</div>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10L12 15L17 10H7Z" fill="#DFE2E9"/>
-                            </svg>
-                        </div>
+                        <select class="table__select">
+                            <option>All</option>
+                            <option>Active</option>
+                            <option>Danger</option>
+                            <option>Pending</option>
+                        </select>
                     </div>
                 </th>
                 <th>
@@ -58,13 +56,12 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15L12 19L16 15H8Z" fill="#B0BAC9"/>
                             </svg>
                         </div>
-                        <div class="table__select">
-                            <div>All</div>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10L12 15L17 10H7Z" fill="#DFE2E9"/>
-                            </svg>
-                        </div>
+                        <select class="table__select">
+                            <option>All</option>
+                            <option>Bravo</option>
+                            <option>Alfa</option>
+                            <option>Gold</option>
+                        </select>
                     </div>
                 </th>
                 <th>
@@ -87,41 +84,37 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15L12 19L16 15H8Z" fill="#B0BAC9"/>
                             </svg>
                         </div>
-                        <div class="table__select">
-                            <div>All</div>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 10L12 15L17 10H7Z" fill="#DFE2E9"/>
-                            </svg>
-                        </div>
+                        <select class="table__select">
+                            <option>All</option>
+                            <option>100-400</option>
+                            <option>400-900</option>
+                        </select>
                     </div>
                 </th>
                 <th class="table__action">Action</th>
             </tr>
             </thead>
             <tbody>
-            <tr class="table__separator"></tr>
             <tr>
                 <td>
                     <div class="table__checkbox-label">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                                  fill="#B0BAC9"/>
-                        </svg>
+                        <label class="table__checkbox-label">
+                            <input class="table__checkbox" type="checkbox">
+                            <span class="table__checkstyle"></span>
+                        </label>
                     </div>
                 </td>
                 <td>
                     <div class="table__image"><img src="images/louis-vuitton.png" alt="louis-vuitton">Louis Vuitton
                     </div>
                 </td>
-                <td>
+                <td class="text-center">
                     <div class="table__status table__status--active">Active</div>
                 </td>
                 <td>Bravo</td>
                 <td><span class="table__sku">9177</span></td>
                 <td>
-                    <div class="table__image"><img class="table__image-round" src="images/image1.png" alt="contact">Evan
+                    <div class="table__contact"><img class="table__image-round" src="images/image1.png" alt="contact">Evan
                         Flores
                     </div>
                 </td>
@@ -144,23 +137,22 @@
             <tr>
                 <td>
                     <div class="table__checkbox-label">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                                  fill="#B0BAC9"/>
-                        </svg>
+                        <label class="table__checkbox-label">
+                            <input class="table__checkbox" type="checkbox">
+                            <span class="table__checkstyle"></span>
+                        </label>
                     </div>
                 </td>
                 <td>
                     <div class="table__image"><img src="images/johnson.png" alt="johnson">Johnson & Johnson</div>
                 </td>
-                <td>
+                <td class="text-center">
                     <div class="table__status table__status--danger">Danger</div>
                 </td>
                 <td>Alfa</td>
                 <td><span class="table__sku">3064</span></td>
                 <td>
-                    <div class="table__image"><img class="table__image-round" src="images/image2.png" alt="contact">Arlene
+                    <div class="table__contact"><img class="table__image-round" src="images/image2.png" alt="contact">Arlene
                         Wilson
                     </div>
                 </td>
@@ -183,23 +175,22 @@
             <tr>
                 <td>
                     <div class="table__checkbox-label">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                                  fill="#B0BAC9"/>
-                        </svg>
+                        <label class="table__checkbox-label">
+                            <input class="table__checkbox" type="checkbox">
+                            <span class="table__checkstyle"></span>
+                        </label>
                     </div>
                 </td>
                 <td>
                     <div class="table__image"><img src="images/starbucks.png" alt="starbucks">Starbucks</div>
                 </td>
-                <td>
+                <td class="text-center">
                     <div class="table__status table__status--pending">Pending</div>
                 </td>
                 <td>Bravo</td>
                 <td><span class="table__sku">9195</span></td>
                 <td>
-                    <div class="table__image"><img class="table__image-round" src="images/image3.png" alt="contact">Jennie
+                    <div class="table__contact"><img class="table__image-round" src="images/image3.png" alt="contact">Jennie
                         Cooper
                     </div>
                 </td>
@@ -222,23 +213,22 @@
             <tr>
                 <td>
                     <div class="table__checkbox-label">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                                  fill="#B0BAC9"/>
-                        </svg>
+                        <label class="table__checkbox-label">
+                            <input class="table__checkbox" type="checkbox">
+                            <span class="table__checkstyle"></span>
+                        </label>
                     </div>
                 </td>
                 <td>
                     <div class="table__image"><img src="images/disney.png" alt="disney">The Walt Disney</div>
                 </td>
-                <td>
+                <td class="text-center">
                     <div class="table__status table__status--danger">Danger</div>
                 </td>
                 <td>Alfa</td>
                 <td><span class="table__sku">3128</span></td>
                 <td>
-                    <div class="table__image"><img class="table__image-round" src="images/image4.png" alt="contact">Philip
+                    <div class="table__contact"><img class="table__image-round" src="images/image4.png" alt="contact">Philip
                         Steward
                     </div>
                 </td>
@@ -261,23 +251,22 @@
             <tr>
                 <td>
                     <div class="table__checkbox-label">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                                  fill="#B0BAC9"/>
-                        </svg>
+                        <label class="table__checkbox-label">
+                            <input class="table__checkbox" type="checkbox">
+                            <span class="table__checkstyle"></span>
+                        </label>
                     </div>
                 </td>
                 <td>
                     <div class="table__image"><img src="images/mitsubishi.png" alt="mitsubishi">Mitsubishi</div>
                 </td>
-                <td>
+                <td class="text-center">
                     <div class="table__status table__status--pending">Pending</div>
                 </td>
                 <td>Bravo</td>
                 <td><span class="table__sku">9892</span></td>
                 <td>
-                    <div class="table__image"><img class="table__image-round" src="images/image5.png" alt="contact">Jorge
+                    <div class="table__contact"><img class="table__image-round" src="images/image5.png" alt="contact">Jorge
                         Black
                     </div>
                 </td>
@@ -300,23 +289,22 @@
             <tr>
                 <td>
                     <div class="table__checkbox-label">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M19 5V19H5V5H19ZM19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
-                                  fill="#B0BAC9"/>
-                        </svg>
+                        <label class="table__checkbox-label">
+                            <input class="table__checkbox" type="checkbox">
+                            <span class="table__checkstyle"></span>
+                        </label>
                     </div>
                 </td>
                 <td>
                     <div class="table__image"><img src="images/ibm.png" alt="ibm">IBM</div>
                 </td>
-                <td>
+                <td class="text-center">
                     <div class="table__status table__status--danger">Danger</div>
                 </td>
                 <td>Gold</td>
                 <td><span class="table__sku">9011</span></td>
                 <td>
-                    <div class="table__image"><img class="table__image-round" src="images/image6.png" alt="contact">Gladys
+                    <div class="table__contact"><img class="table__image-round" src="images/image6.png" alt="contact">Gladys
                         Jones
                     </div>
                 </td>
@@ -345,10 +333,14 @@
             <button class="footer__button">
                 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="path-1-inside-1" fill="white">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z"/>
                     </mask>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z" fill="white"/>
-                    <path d="M0 5.00003L-0.707107 4.29292L-1 4.58582V5.00003H0ZM0 29H-1V29.4142L-0.707107 29.7071L0 29ZM3.99768 32.9977L3.29057 33.7048L3.58347 33.9977H3.99768V32.9977ZM28.0023 32.9977V33.9977H28.4165L28.7094 33.7048L28.0023 32.9977ZM32 29L32.7071 29.7071L33 29.4142V29H32ZM32 5.00003H33V4.58582L32.7071 4.29292L32 5.00003ZM28 1.00003L27.2929 0.292924L26.5858 1.00003L27.2929 1.70714L28 1.00003ZM28.0023 0.997711L28.7094 1.70482L30.4165 -0.00228882H28.0023V0.997711ZM3.99768 0.997711V-0.00228882H1.58347L3.29057 1.70482L3.99768 0.997711ZM4 1.00003L4.70711 1.70714L5.41421 1.00003L4.70711 0.292924L4 1.00003ZM-1 5.00003V29H1V5.00003H-1ZM-0.707107 29.7071L3.29057 33.7048L4.70479 32.2906L0.707107 28.2929L-0.707107 29.7071ZM3.99768 33.9977H28.0023V31.9977H3.99768V33.9977ZM28.7094 33.7048L32.7071 29.7071L31.2929 28.2929L27.2952 32.2906L28.7094 33.7048ZM33 29V5.00003H31V29H33ZM32.7071 4.29292L28.7071 0.292924L27.2929 1.70714L31.2929 5.70714L32.7071 4.29292ZM28.7071 1.70714L28.7094 1.70482L27.2952 0.290604L27.2929 0.292924L28.7071 1.70714ZM28.0023 -0.00228882H3.99768V1.99771H28.0023V-0.00228882ZM3.29057 1.70482L3.29289 1.70714L4.70711 0.292924L4.70479 0.290604L3.29057 1.70482ZM3.29289 0.292924L-0.707107 4.29292L0.707107 5.70714L4.70711 1.70714L3.29289 0.292924Z" fill="#B0BAC9" mask="url(#path-1-inside-1)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z"
+                          fill="white"/>
+                    <path d="M0 5.00003L-0.707107 4.29292L-1 4.58582V5.00003H0ZM0 29H-1V29.4142L-0.707107 29.7071L0 29ZM3.99768 32.9977L3.29057 33.7048L3.58347 33.9977H3.99768V32.9977ZM28.0023 32.9977V33.9977H28.4165L28.7094 33.7048L28.0023 32.9977ZM32 29L32.7071 29.7071L33 29.4142V29H32ZM32 5.00003H33V4.58582L32.7071 4.29292L32 5.00003ZM28 1.00003L27.2929 0.292924L26.5858 1.00003L27.2929 1.70714L28 1.00003ZM28.0023 0.997711L28.7094 1.70482L30.4165 -0.00228882H28.0023V0.997711ZM3.99768 0.997711V-0.00228882H1.58347L3.29057 1.70482L3.99768 0.997711ZM4 1.00003L4.70711 1.70714L5.41421 1.00003L4.70711 0.292924L4 1.00003ZM-1 5.00003V29H1V5.00003H-1ZM-0.707107 29.7071L3.29057 33.7048L4.70479 32.2906L0.707107 28.2929L-0.707107 29.7071ZM3.99768 33.9977H28.0023V31.9977H3.99768V33.9977ZM28.7094 33.7048L32.7071 29.7071L31.2929 28.2929L27.2952 32.2906L28.7094 33.7048ZM33 29V5.00003H31V29H33ZM32.7071 4.29292L28.7071 0.292924L27.2929 1.70714L31.2929 5.70714L32.7071 4.29292ZM28.7071 1.70714L28.7094 1.70482L27.2952 0.290604L27.2929 0.292924L28.7071 1.70714ZM28.0023 -0.00228882H3.99768V1.99771H28.0023V-0.00228882ZM3.29057 1.70482L3.29289 1.70714L4.70711 0.292924L4.70479 0.290604L3.29057 1.70482ZM3.29289 0.292924L-0.707107 4.29292L0.707107 5.70714L4.70711 1.70714L3.29289 0.292924Z"
+                          fill="#B0BAC9" mask="url(#path-1-inside-1)"/>
                 </svg>
                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -356,15 +348,19 @@
                           fill="#B0BAC9"/>
                 </svg>
             </button>
-            <button class="footer__link"><a href="#">1</a></button>
+            <input class="footer__link" value="1">
             <span class="footer__slash">/ </span>16
             <button class="footer__button">
                 <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <mask id="path-1-inside-1" fill="white">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z"/>
+                    <mask id="path-1" fill="white">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z"/>
                     </mask>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z" fill="white"/>
-                    <path d="M0 5.00003L-0.707107 4.29292L-1 4.58582V5.00003H0ZM0 29H-1V29.4142L-0.707107 29.7071L0 29ZM3.99768 32.9977L3.29057 33.7048L3.58347 33.9977H3.99768V32.9977ZM28.0023 32.9977V33.9977H28.4165L28.7094 33.7048L28.0023 32.9977ZM32 29L32.7071 29.7071L33 29.4142V29H32ZM32 5.00003H33V4.58582L32.7071 4.29292L32 5.00003ZM28 1.00003L27.2929 0.292924L26.5858 1.00003L27.2929 1.70714L28 1.00003ZM28.0023 0.997711L28.7094 1.70482L30.4165 -0.00228882H28.0023V0.997711ZM3.99768 0.997711V-0.00228882H1.58347L3.29057 1.70482L3.99768 0.997711ZM4 1.00003L4.70711 1.70714L5.41421 1.00003L4.70711 0.292924L4 1.00003ZM-1 5.00003V29H1V5.00003H-1ZM-0.707107 29.7071L3.29057 33.7048L4.70479 32.2906L0.707107 28.2929L-0.707107 29.7071ZM3.99768 33.9977H28.0023V31.9977H3.99768V33.9977ZM28.7094 33.7048L32.7071 29.7071L31.2929 28.2929L27.2952 32.2906L28.7094 33.7048ZM33 29V5.00003H31V29H33ZM32.7071 4.29292L28.7071 0.292924L27.2929 1.70714L31.2929 5.70714L32.7071 4.29292ZM28.7071 1.70714L28.7094 1.70482L27.2952 0.290604L27.2929 0.292924L28.7071 1.70714ZM28.0023 -0.00228882H3.99768V1.99771H28.0023V-0.00228882ZM3.29057 1.70482L3.29289 1.70714L4.70711 0.292924L4.70479 0.290604L3.29057 1.70482ZM3.29289 0.292924L-0.707107 4.29292L0.707107 5.70714L4.70711 1.70714L3.29289 0.292924Z" fill="#B0BAC9" mask="url(#path-1-inside-1)"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0 5.00003V29L3.99768 32.9977H28.0023L32 29V5.00003L28 1.00003L28.0023 0.997711H3.99768L4 1.00003L0 5.00003Z"
+                          fill="white"/>
+                    <path d="M0 5.00003L-0.707107 4.29292L-1 4.58582V5.00003H0ZM0 29H-1V29.4142L-0.707107 29.7071L0 29ZM3.99768 32.9977L3.29057 33.7048L3.58347 33.9977H3.99768V32.9977ZM28.0023 32.9977V33.9977H28.4165L28.7094 33.7048L28.0023 32.9977ZM32 29L32.7071 29.7071L33 29.4142V29H32ZM32 5.00003H33V4.58582L32.7071 4.29292L32 5.00003ZM28 1.00003L27.2929 0.292924L26.5858 1.00003L27.2929 1.70714L28 1.00003ZM28.0023 0.997711L28.7094 1.70482L30.4165 -0.00228882H28.0023V0.997711ZM3.99768 0.997711V-0.00228882H1.58347L3.29057 1.70482L3.99768 0.997711ZM4 1.00003L4.70711 1.70714L5.41421 1.00003L4.70711 0.292924L4 1.00003ZM-1 5.00003V29H1V5.00003H-1ZM-0.707107 29.7071L3.29057 33.7048L4.70479 32.2906L0.707107 28.2929L-0.707107 29.7071ZM3.99768 33.9977H28.0023V31.9977H3.99768V33.9977ZM28.7094 33.7048L32.7071 29.7071L31.2929 28.2929L27.2952 32.2906L28.7094 33.7048ZM33 29V5.00003H31V29H33ZM32.7071 4.29292L28.7071 0.292924L27.2929 1.70714L31.2929 5.70714L32.7071 4.29292ZM28.7071 1.70714L28.7094 1.70482L27.2952 0.290604L27.2929 0.292924L28.7071 1.70714ZM28.0023 -0.00228882H3.99768V1.99771H28.0023V-0.00228882ZM3.29057 1.70482L3.29289 1.70714L4.70711 0.292924L4.70479 0.290604L3.29057 1.70482ZM3.29289 0.292924L-0.707107 4.29292L0.707107 5.70714L4.70711 1.70714L3.29289 0.292924Z"
+                          fill="#B0BAC9" mask="url(#path-1-inside-1)"/>
                 </svg>
                 <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -375,12 +371,13 @@
         </div>
         <div class="footer__rows">
             Rows per page
-            <div class="footer__select">
-                15
-                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M5.16663 6.66666L8.49996 9.99999L11.8333 6.66666H5.16663Z" fill="#768193"/>
-                </svg>
+            <div class="footer__selectwrap">
+                <select class="footer__select">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>25</option>
+                </select>
             </div>
         </div>
     </div>

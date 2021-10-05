@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   font-size: 14px;
+
 }
 
 .table-wrapper {
@@ -12,13 +13,46 @@
 
 .table {
   width: 100%;
+  @media (max-width: 1024px) {
+
+    tr th:nth-child(5), tr td:nth-child(5) {
+      display: none;
+    }
+
+    tr th:nth-child(6), tr td:nth-child(6) {
+      display: none;
+    }
+  }
 
   &__checkbox-header {
     vertical-align: middle;
+  }
 
-    &:hover {
-      cursor: pointer;
-    }
+  &__checkbox-label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+  }
+
+  &__checkbox {
+    width: 24px;
+    height: 24px;
+    background: url("../images/checkbox.svg");
+    margin: 0;
+  }
+
+  &__checkstyle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__checkbox:checked + &__checkstyle {
+    background-color: #7FC008;
   }
 
   &__checkbox-label {
@@ -29,6 +63,13 @@
 
   &__head {
     box-shadow: inset 0px -1px 0px #C9CFDA;
+  }
+
+  tbody:before {
+    content: "@";
+    display: block;
+    line-height: 32px;
+    text-indent: -99999px;
   }
 
   &__th {
@@ -52,7 +93,6 @@
     &--active {
       border-color: $green;
       color: $green;
-      margin-left: 5px;
     }
 
     &--danger {
@@ -69,6 +109,10 @@
   th, td {
     text-align: left;
     padding: 4px 10px;
+  }
+
+  .text-center {
+    text-align: center;
   }
 
   th span {
@@ -103,11 +147,14 @@
     box-shadow: inset 0px -1px 0px #DFE2E9;
   }
 
-  &__image {
+  &__image, &__contact {
     display: flex;
     align-items: center;
     gap: 15px;
-    min-width: 200px;
+  }
+
+  &__image {
+    min-width: 180px;
   }
 
   &__image-round {
@@ -126,6 +173,9 @@
 
   &__price {
     text-align: right;
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
   }
 
   &__search {
@@ -146,10 +196,8 @@
     width: 95px;
     display: flex;
     align-items: center;
-
-    svg {
-      margin-left: 40px;
-    }
+    background: url("images/thead_drop_down.svg") no-repeat;
+    background-position: right 5px top 50%;
 
     &:hover {
       cursor: pointer;
@@ -161,6 +209,10 @@
 
     &:hover {
       cursor: pointer;
+
+      svg path {
+        fill: #DB303F;
+      }
     }
   }
 }

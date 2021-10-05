@@ -37,31 +37,26 @@
     width: 30px;
     height: 30px;
     background-color: $white;
+    color: #304FFE;
+    text-align: center;
 
     &:hover {
       cursor: pointer;
     }
 
-    a {
-      text-decoration: none;
-      color: #0000FFFF;
-
-    }
   }
 
   &__select {
+    appearance: none;
+    outline: 0;
     line-height: 20px;
     margin: 0 8px;
     padding: 6px 12px;
-    border: 1px solid #B0BAC9;
+    border-color: #B0BAC9;
     width: 60px;
     height: 32px;
-    display: flex;
-    align-items: center;
-
-    svg {
-      margin-left: 4px;
-    }
+    background:url("images/ic_arrow_drop_down.svg") no-repeat;
+    background-position: right 5px top 50%;
 
     &:hover {
       cursor: pointer;
@@ -73,9 +68,10 @@
     align-items: center;
     gap: 12px;
   }
-  &__slash{
+
+  &__slash {
     font-size: 14px;
     line-height: 20px;
-    color:#B0BAC9;
+    color: #B0BAC9;
   }
 }
