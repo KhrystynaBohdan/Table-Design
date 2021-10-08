@@ -8,3 +8,10 @@ body {
   font-family: $fontOpenSans;
   padding: 7%;
 }
+
+.table__actions, select, input, button {
+  &:focus-visible {
+    outline: 2px solid $lightgrey;
+    border-radius: 2px;
+  }
+}

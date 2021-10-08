@@ -38,7 +38,7 @@
   &__checkbox {
     width: 24px;
     height: 24px;
-    background: url("../images/checkbox.svg");
+    background: url("images/checkbox.svg");
     margin: 0;
   }
 
@@ -202,11 +202,17 @@
     &:hover {
       cursor: pointer;
     }
+
+    //&:focus {
+    //  outline: 1px solid blue;
+    //}
   }
 
   &__actions {
     text-align: center;
-
+    border: none;
+    background-color: transparent;
+    margin-left: 15px;
     &:hover {
       cursor: pointer;
 

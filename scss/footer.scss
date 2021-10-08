@@ -14,7 +14,6 @@
     width: 30px;
     height: 30px;
     background-color: $white;
-    //clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
     border-radius: 5px;
     padding: 8px 12px;
     position: relative;
@@ -22,6 +21,10 @@
     &:hover {
       cursor: pointer;
       color: $dark-blue;
+    }
+
+    &:focus {
+      box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     }
 
     svg {
@@ -66,6 +69,10 @@
     &:hover {
       cursor: pointer;
     }
+
+    //&:focus {
+    //  outline: 1px solid #304FFE;
+    //}
   }
 
   &__rows {
